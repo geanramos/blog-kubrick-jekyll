@@ -1,0 +1,59 @@
+<div id="sidebar" role="complementary">
+<form action="/search.html" method="get">
+  <input type="text" id="search-input" name="query" placeholder="Buscar no blog...">
+  <input type="submit" value="Buscar">
+</form>
+<hr>
+  <ul>
+    <li>
+      <h2>Páginas</h2>
+      <ul>
+        {% for p in site.pages %}
+          {% if p.title and p.url != '/archives.html' %}
+            <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+        <li><a href="{{ '/archives.html' | relative_url }}">Arquivos</a></li>
+      </ul>
+    </li>
+
+    <li>
+      <h2>Arquivos</h2>
+      <ul>
+        {% assign postsByMonth = site.posts | group_by_exp:"post", "post.date | date: '%B de %Y'" %}
+        {% for month in postsByMonth %}
+          {% assign first_post_in_month = month.items | first %}
+          <li>
+            <a href="{{ site.baseurl }}/arquivos/{{ first_post_in_month.date | date: '%Y/%m' }}/">
+              {{ month.name }}
+            </a> 
+            ({{ month.items | size }})
+          </li>
+        {% endfor %}
+      </ul>
+    </li>
+
+    <li>
+      <h2>Categorias</h2>
+      <ul>
+        {% for category in site.categories %}
+          <li>
+            <a href="{{ site.baseurl }}/categorias/{{ category | first | slugify }}/">
+              {{ category | first }}
+            </a> 
+            ({{ category | last | size }})
+          </li>
+        {% endfor %}
+      </ul>
+    </li>
+
+    <li>
+      <h2>Meta</h2>
+      <ul>
+        <li><a href="{{ "/feed.xml" | relative_url }}">Feed (RSS)</a></li>
+        <li><a href="https://jekyllrb.com/" title="Feito com Jekyll" target="_blank">Jekyll</a></li>
+        <li><a href="https://github.com/" title="Hospedado no GitHub Pages (provavelmente!)" target="_blank">GitHub</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>

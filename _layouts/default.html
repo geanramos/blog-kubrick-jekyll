@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  
+  <title>{{ page.title }} | {{ site.title }}</title>
+
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}" type="text/css" media="screen" />
+
+  <style type="text/css" media="screen">
+    {% if page.sidebar == false %}
+      /* Se a página não tiver sidebar, usa o fundo largo */
+      #page { background: url("{{ '/assets/images/kubrickbgwide.jpg' | relative_url }}") repeat-y top; border: none; }
+    {% else %}
+      /* Senão, usa o fundo padrão com a linha da sidebar */
+      #page { background: url("{{ '/assets/images/kubrickbg-ltr.jpg' | relative_url }}") repeat-y top; border: none; }
+    {% endif %}
+  </style>
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v23.0"></script>
+<div id="page">
+
+  {% include header.html %}
+
+  <div id="content" class="{{ page.column_class | default: 'narrowcolumn' }}" role="main">
+    {{ content }}
+  </div>
+
+  {% if page.sidebar != false %}
+    {% include sidebar.html %}
+  {% endif %}
+
+  {% include footer.html %}
+
+</div>
+
+</body>
+</html>

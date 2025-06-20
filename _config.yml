@@ -1,0 +1,44 @@
+# Informações Básicas do Site
+title: Default
+email: seu-email@dominio.com # Troque pelo seu email
+description: >-
+  The default WordPress theme based on the famous Kubrick.
+
+# URL e Baseurl
+# baseurl é usado se o site estiver num subdiretório, ex: /blog
+baseurl: "" 
+# url é o endereço principal do seu site. Essencial para o site no ar.
+url: "http://127.0.0.1:4000/" # TROQUE PELO ENDEREÇO FINAL DO SEU SITE
+
+# Nomes de usuário (opcional, usado por alguns temas)
+twitter_username: geanramos
+github_username:  geanramos
+
+# --- Configurações de Build ---
+
+# A linha 'theme:' foi removida/comentada para usar nossos arquivos locais
+# theme: minima
+
+# A configuração de permalink foi movida para o nível principal
+permalink: /:title.html
+
+# Lista de plugins a serem carregados
+plugins:
+  - jekyll-feed
+  - jekyll-archives
+
+# Configuração do Jekyll Archives
+# (Note que 'permalink' no singular não está mais aqui dentro)
+jekyll-archives:
+  enabled:
+    - month
+    - categories
+    - tags
+  layouts:
+    month: archive_list
+    category: archive_list
+    tag: archive_list
+  permalinks:
+    month: '/arquivos/:year/:month/'
+    category: '/categorias/:name/'
+    tag: '/tags/:name/'

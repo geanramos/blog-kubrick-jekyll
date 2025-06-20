@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<h2 class="pagetitle">{{ page.title }}</h2>
+
+{% for post in page.posts %}
+  <div class="post">
+    <h2><a href="{{ post.url | relative_url }}" rel="bookmark" title="Link para {{ post.title }}">{{ post.title }}</a></h2>
+    <small>{{ post.date | date: "%B %-d, %Y" }}</small>
+    <div class="entry">
+      {{ post.excerpt }}
+      <p><a href="{{ post.url | relative_url }}">Leia o resto deste post &raquo;</a></p>
+    </div>
+  </div>
+{% else %}
+  <p>Nenhum post encontrado neste arquivo.</p>
+{% endfor %}

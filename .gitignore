@@ -1,0 +1,20 @@
+# Ignorar a pasta do site gerado pelo Jekyll
+/_site
+
+# Ignorar a pasta de dependências do Bundler
+/vendor/bundle
+
+# Ignorar caches e metadados do Jekyll
+.jekyll-cache/
+.jekyll-metadata
+
+# Ignorar caches de Sass/SCSS
+.sass-cache/
+*.css.map
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos de sistema operacional (comuns em Mac e Windows)
+.DS_Store
+Thumbs.db
