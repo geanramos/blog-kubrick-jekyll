@@ -42,3 +42,6 @@ jekyll-archives:
     month: '/arquivos/:year/:month/'
     category: '/categorias/:name/'
     tag: '/tags/:name/'
+
+# Informações do Autor
+author: Gean Ramos
