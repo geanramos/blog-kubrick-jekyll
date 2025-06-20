@@ -17,7 +17,7 @@ github_username:  geanramos
 # --- Configurações de Build ---
 
 # A linha 'theme:' foi removida/comentada para usar nossos arquivos locais
-theme: minima
+# theme: minima
 
 # A configuração de permalink foi movida para o nível principal
 permalink: /:title.html
