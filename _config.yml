@@ -6,9 +6,9 @@ description: >-
 
 # URL e Baseurl
 # baseurl é usado se o site estiver num subdiretório, ex: /blog
-baseurl: "" 
+baseurl: "/blog-kubrick-jekyll" 
 # url é o endereço principal do seu site. Essencial para o site no ar.
-url: "http://127.0.0.1:4000/" # TROQUE PELO ENDEREÇO FINAL DO SEU SITE
+url: "https://dev.gean.me" # TROQUE PELO ENDEREÇO FINAL DO SEU SITE
 
 # Nomes de usuário (opcional, usado por alguns temas)
 twitter_username: geanramos
@@ -17,7 +17,7 @@ github_username:  geanramos
 # --- Configurações de Build ---
 
 # A linha 'theme:' foi removida/comentada para usar nossos arquivos locais
-# theme: minima
+theme: minima
 
 # A configuração de permalink foi movida para o nível principal
 permalink: /:title.html
