@@ -17,9 +17,12 @@ por Gean Ramos com a ajuda do seu Parceiro de Programação.
 
 
 /* Begin Typography & Colors */
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 body {
 	font-size: 62.5%; /* Resets 1em to 10px */
-	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font-family: 'Ubuntu', Lucida Grande,  Verdana, Arial, Sans-Serif;
 	background: #d5d6d7 url('../images/kubrickbgcolor.jpg');
 	color: #333;
 	text-align: center;
@@ -88,7 +91,7 @@ small {
 	}
 
 h1, h2, h3 {
-	font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font-family: 'Trebuchet MS', 'Ubuntu', Lucida Grande,  Verdana, Arial, Sans-Serif;
 	font-weight: bold;
 	}
 
@@ -111,7 +114,7 @@ h2.pagetitle {
 	}
 
 #sidebar h2 {
-	font-family: 'Lucida Grande', Verdana, Sans-Serif;
+	font-family: 'Ubuntu', Lucida Grande,  Verdana, Sans-Serif;
 	font-size: 1.2em;
 	}
 
@@ -145,7 +148,7 @@ h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar
 	}
 
 .commentlist li, #commentform input, #commentform textarea {
-	font: 0.9em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font: 0.9em 'Ubuntu', Lucida Grande,  Verdana, Arial, Sans-Serif;
 	}
 .commentlist li ul li {
 	font-size: 1em;
@@ -175,7 +178,7 @@ h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar
 	}
 
 #commentform p {
-	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font-family: 'Ubuntu', Lucida Grande,  Verdana, Arial, Sans-Serif;
 	}
 
 .commentmetadata {
@@ -183,7 +186,7 @@ h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar
 	}
 
 #sidebar {
-	font: 1em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font: 1em 'Ubuntu', Lucida Grande,  Verdana, Arial, Sans-Serif;
 	}
 
 small, #sidebar ul ul li, #sidebar ul ol li, .nocomments, .postmetadata, blockquote, strike {
@@ -219,7 +222,7 @@ a:hover {
 	}
 
 #wp-calendar caption {
-	font: bold 1.3em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font: bold 1.3em 'Ubuntu', Lucida Grande,  Verdana, Arial, Sans-Serif;
 	text-align: center;
 	}
 
